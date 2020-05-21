@@ -1,0 +1,124 @@
+### Largest of 3 numbers
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+n3 = int(input("Enter third number: "))
+if (n1 >= n2) and (n1 >= n3):
+   largest = n1
+elif (n2 >= n1) and (n2 >= n3):
+   largest = n2
+else:
+   largest = n3
+
+
+
+
+#### Multiplication table
+
+n=int(input("Enter the number to print the table:"))
+for i in range(1,11):
+    print(n,"x",i,"=",n*i)
+
+
+####  n Natural numbers using while loop
+
+n=int(input("Enter a value:"))
+sum=0
+val=1
+while(val<=n):
+    sum=sum+val
+    val=val+1
+print("Sum of n natural numbers are:",sum)
+
+
+
+##### Prime numbers using for loop
+
+low = 2
+up = 100
+print("The prime numbers b/w 2 to 100 are:")
+for n in range(low,up+1):
+   if (n>1):
+       for i in range(2,n):
+           if (n%i==0):
+               break
+       else:
+           print(n)
+
+
+####   factorial using for loop
+
+
+num = int(input("enter a number: ")) 
+fact = 1
+for i in range(1, num + 1):
+	fact = fact * i
+print("factorial of ", num, " is ", fact)
+
+
+
+
+#### Arithimetic Operations
+
+n1 = int(input("Enter First number: "))
+n2 = int(input("Enter Second number: "))
+add = n1+n2
+sub = n1-n2
+mul = n1*n2
+div = n1/n2
+mod = n1%n2
+print("Addition of two numbers is:",add)
+print("Substraction of two numbers is:",sub)
+print("Product of two numbers is:",mul)
+print("Division of two numbers is:",div)
+print("Remainder of two numbers is:",mod)
+
+#### leap year 
+
+yr=int(input("Enter a year:"))
+if((yr%4==0) and (yr%100!=0) or (yr%400==0)):
+    print("The year",yr, "is a leap year")
+else:
+    print("The year",yr, "is not a leap year")
+
+
+
+
+#####Sum of n natural numbers using for loop
+
+n=int(input("Enter any number:"))
+sum=0
+for i in range(1, n+1):
+    sum=sum+i
+print("sum of n natural numbers are:",sum)
+
+
+
+##### Fibonacci series 
+
+n = int(input("enter a number "))
+a = 0
+b = 1
+print("The fibonacci series is:")
+print(a, b)
+for i in range(2,n):
+	c = a + b
+	print(c)
+	a = b
+	b = c
+
+
+
+##### Armstrong number using while loop
+
+n1 = int(input("Enter a number: "))
+sum = 0
+temp = n1
+while (temp > 0):
+   dig = temp % 10
+   sum = sum + dig ** 3
+   temp = temp // 10
+if (n1 == sum):
+   print("The given number is an Armstrong number", n1)
+else:
+   print("The given number is not an Armstrong number", n1)
